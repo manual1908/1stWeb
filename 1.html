@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>About Me</title>
-<meta charset="utf-8">
-<style>
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  h1 {
-    font-size: 45px;
-    text-align: center;
-  }
-</style>
-</head>
-<body>
-  <h1><a href="index.html">MANUAL1908</a></h1>
-  <ol>
-    <li><a href="1.html" style="color:red;text-decoration:underline">About Me</a></li>
-    <li><a href="2.html">Major</a></li>
-    <li><a href="3.html">Learning</a></li>
-  </ol>
-  <h2>About Me</h2>
-  <p>Hello. My name is GyoBeom.
-    <br>In Korea, GyoBeom's mean is <u>'Manual'</u>.<br>So, my nickname is <strong>Manual1908</strong>.<br>The numbers(=1908) have no special meaning
-  </p>
-  <p>My Favorite game is <a href="https://overwatch.op.gg/detail/quick/170121230192208110194245" target="_blank" title="html5 apecification">Overwatch</a>.<br>I'm pretty good healer.<br><iframe width="980" height="410" src="https://mars.nasa.gov/layout/embed/send-your-name/future/certificate/?cn=955820498598" frameborder="0"></iframe>
-  </p>
-</body>
+  <head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <style>
+      a:link {
+        color: green;
+        text-decoration: none;
+      }
+      a:visited {
+        color: gray;
+        text-decoration: none;
+      }
+      a:hover {
+        color: black;
+      }
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin: 0px;
+        padding: 30px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 156px 1fr;
+      }
+      #grid ol {
+        border-right: 1px solid black;
+        width: 100px;
+        margin: 0px;
+        padding: 20px;
+        padding-left: 35px;
+      }
+      #grid #article_1 {
+        padding-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">MANUAL1908</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">About Me</a></li>
+        <li><a href="2.html">Major</a></li>
+        <li><a href="3.html">Learning</a></li>
+      </ol>
+      <div id="article_1">
+        <h2>About Me</h2>
+        <p>Hello. My name is GyoBeom.
+          <br>In Korea, GyoBeom's mean is <u>'Manual'</u>.<br>So, my nickname is <strong>Manual1908</strong>.<br>The numbers(=1908) have no special meaning
+        </p>
+        <p>My Favorite game is <a href="https://overwatch.op.gg/detail/quick/170121230192208110194245" target="_blank" title="html5 apecification">Overwatch</a>.<br>I'm pretty good healer.<br><iframe width="490" height="205" src="https://mars.nasa.gov/layout/embed/send-your-name/future/certificate/?cn=955820498598" frameborder="0"></iframe>
+        </p>
+      </div>
+    </div>
+
+
+  </body>
 </html>

@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Major</title>
     <style>
-      a {
-        color: black;
+      a:link {
+        color: green;
         text-decoration: none;
+      }
+      a:visited {
+        color: gray;
+        text-decoration: none;
+      }
+      a:hover {
+        color: black;
       }
       h1 {
         font-size: 45px;
         text-align: center;
+        border-bottom: 1px solid black;
+        margin: 0px;
+        padding: 30px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 156px 1fr;
+      }
+      #grid ol {
+        border-right: 1px solid black;
+        width: 100px;
+        margin: 0px;
+        padding: 20px;
+        padding-left: 35px;
+      }
+      #grid #article_1 {
+        padding-left: 25px;
       }
     </style>
   </head>
   <body>
     <h1> <a href="index.html">MANUAL1908</a> </h1>
-    <ol>
-      <li><a href="1.html">About Me</a></li>
-      <li><a href="2.html" style="color:red;text-decoration:underline">Major</a></li>
-      <li><a href="3.html">Learning</a></li>
-    </ol>
-    <h2>Major</h2>
-    <p>I'm Kyonggi Univ student.<br>My major is <strong>Police Administration</strong><br><a href="http://www.kyonggi.ac.kr/kguSbjInfo.kgu?mzcode=K00M010304&orgCd=K010505" target="_blank" title="html5 apecification">Kyonggi Univ 'Police Administration'</a>
-  </p>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">About Me</a></li>
+        <li><a href="2.html">Major</a></li>
+        <li><a href="3.html">Learning</a></li>
+      </ol>
+      <div id="article_1">
+        <h2>Major</h2>
+        <p>I'm Kyonggi Univ student.<br>My major is <strong>Police Administration</strong><br><a href="http://www.kyonggi.ac.kr/kguSbjInfo.kgu?mzcode=K00M010304&orgCd=K010505" target="_blank" title="html5 apecification">Kyonggi Univ 'Police Administration'</a>
+        </p>
+      </div>
+    </div>
+
   </body>
 </html>
