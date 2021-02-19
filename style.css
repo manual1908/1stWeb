@@ -1,9 +1,5 @@
 a:link {
-  color: green;
-  text-decoration: none;
-}
-a:visited {
-  color: gray;
+  color: coral;
   text-decoration: none;
 }
 a:hover {
@@ -21,6 +17,7 @@ h1 {
   grid-template-columns: 156px 1fr;
 }
 #grid ol {
+  font-weight: bold;
   border-right: 1px solid black;
   width: 100px;
   margin: 0px;
