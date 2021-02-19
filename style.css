@@ -1,5 +1,9 @@
 a:link {
-  color: coral;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+a:visited {
+  color: cornflowerblue;
   text-decoration: none;
 }
 a:hover {
@@ -8,9 +12,13 @@ a:hover {
 h1 {
   font-size: 45px;
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: none;
   margin: 0px;
   padding: 30px;
+  padding-bottom: 0px;
+}
+#button {
+  border-bottom: 1px solid black;
 }
 #grid {
   display: grid;

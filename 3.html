@@ -7,6 +7,20 @@
   </head>
   <body>
     <h1> <a href="index.html">MANUAL1908</a> </h1>
+    <div id="button" align="right">
+      <input type="button" style="height:30px" value="Night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='beige';
+        document.querySelector('#grid ol').style.borderRightColor='white';
+        document.querySelector('#button').style.borderBottomColor='white';
+      ">
+      <input type="button" style="height:30px" value="Day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('#grid ol').style.borderRightColor='black';
+      document.querySelector('#button').style.borderBottomColor='black';
+      ">
+    </div>
     <div id="grid">
       <ol>
         <li><a href="1.html">About Me</a></li>
