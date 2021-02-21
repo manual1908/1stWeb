@@ -9,16 +9,20 @@
     <h1> <a href="index.html">MANUAL1908</a> </h1>
     <div id="button" align="right">
       <input type="button" style="height:30px" value="Night" onclick="
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='beige';
-        document.querySelector('#grid ol').style.borderRightColor='white';
-        document.querySelector('#button').style.borderBottomColor='white';
-      ">
-      <input type="button" style="height:30px" value="Day" onclick="
-      document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
-      document.querySelector('#grid ol').style.borderRightColor='black';
-      document.querySelector('#button').style.borderBottomColor='black';
+        var target = document.querySelector('body');
+        if(this.value === 'Night') {
+          target.style.backgroundColor='black';
+          target.style.color='beige';
+          document.querySelector('#grid ol').style.borderRightColor='white';
+          document.querySelector('#button').style.borderBottomColor='white';
+          this.value = 'Day';
+        } else {
+          target.style.backgroundColor='white';
+          target.style.color='black';
+          document.querySelector('#grid ol').style.borderRightColor='black';
+          document.querySelector('#button').style.borderBottomColor='black';
+          this.value = 'Night';
+        }
       ">
     </div>
     <div id="grid">
